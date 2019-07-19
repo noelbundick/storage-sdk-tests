@@ -5,5 +5,13 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.test.config": {
+        "name": "custom",
+        "workingDirectory": "${workspaceFolder}",
+        "vmargs": [
+            "-DconnString=DefaultEndpointsProtocol=https;AccountName=noeltest1;AccountKey=m0wPocjjzJQOwNlf+j9T7h6Ni2iWA1SUIXFi1HT4n3wawfx3Br4ZUrriN++/Cjir/oa40ZHBDS8e+wV/rn6Alw==;EndpointSuffix=core.windows.net"
+        ]
+    },
+    "java.test.defaultConfig": "custom"
 }
